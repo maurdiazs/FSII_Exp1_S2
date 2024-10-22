@@ -1,0 +1,38 @@
+/* Estilos básicos de la navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul ul {
+    display: none; /* Esconder las subcategorías hasta que el usuario pase el cursor */
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 10px;
+    list-style: none;
+}
+
+nav ul li:hover > ul {
+    display: block; /* Mostrar las subcategorías al pasar el cursor */
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul ul li a {
+    display: flex; /* Flexbox para alinear imagen y texto */
+    align-items: center;
+    padding: 5px;
+}
+
+nav ul ul li img {
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    border-radius: 5px; /* Redondear bordes de las imágenes */
+}
+
+nav ul ul li a:hover {
+    background-color: #ddd; /* Efecto hover sobre las subcategorías */
+}
